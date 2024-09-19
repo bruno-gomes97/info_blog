@@ -1,0 +1,171 @@
+#container-training {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+}
+
+/* CABECALHO */
+#container-training #cabecalho {
+    color: #fff;
+    grid-column: 1/-1;
+    background-color: #ff4500;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#container-training #cabecalho img,
+footer img {
+    width: 30%;
+    cursor: pointer;
+    grid-column: 2;
+}
+
+#container-training #cabecalho ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    list-style-type: none;
+}
+
+#container-training #cabecalho ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    opacity: .9;
+}
+
+#container-training #cabecalho ul li a:hover {
+    opacity: 1;
+}
+
+nav {
+    display: none;
+}
+
+#container-training main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-column: 1/-1;
+    background-color: #fff;
+}
+
+#container-training main header {
+    grid-column: 1/-1;
+    grid-row: 1;
+    text-align: center;
+}
+
+#container-training main header p {
+    text-align: center;
+}
+
+#container-training main aside {
+    grid-row: 2/-1;
+    grid-column: 1;
+    margin: 0;
+}
+
+#container-training main aside ul li a {
+    color: #ccc;
+}
+
+#container-training main aside ul li a:hover {
+    color: #ff4500;
+    opacity: 1;
+}
+
+#container-training main #card {
+    grid-column: 2/-1;
+    padding: 0 2rem;
+}
+
+#container-training main #card ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#container-training main #card ul li {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#container-training main #card ul li:hover h3 {
+    color: #ff4500;
+}
+
+#container-training main #card ul li p {
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* CELULAR */
+@media screen and (max-width: 600px) {
+    /* CABECALHO */
+    #container-training #cabecalho {
+        display: block;
+    }
+
+    #container-training #cabecalho img,
+    footer img {
+        width: 150px;
+        margin: 0 auto;
+        cursor: pointer;
+        display: block;
+    }
+
+    #container-training #cabecalho ul {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #ff4500;
+        font-size: 14px;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    #container-training main {
+        width: 100%;
+        display: block;
+    }
+
+    #container-training main #card {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+    }
+
+    #container-training main #card ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-training main #card ul li {
+        width: 100%;
+    }
+}

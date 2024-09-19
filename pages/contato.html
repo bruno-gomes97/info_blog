@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pagina inicial</title>
+</head>
+
+<body>
+    <div id="container-contato">
+        <!-- CABECALHO -->
+        <header id="cabecalho">
+            <img src="../img/logotipo.png" alt="Logotipo do blog">
+
+            <!-- MENU -->
+            <ul>
+                <li>
+                    <a href="../index.html">Página inicial</a>
+                </li>
+                <li>
+                    <a href="training.html">Training</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </header>
+        <nav>
+            <!-- MENU MOBILE -->
+            <ul>
+                <li>
+                    <a href="../index.html">Página inicial</a>
+                </li>
+                <li>
+                    <a href="training.html">Training</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="formulario">
+                <h1>Como posso ajudar?</h1>
+                <p>
+                    Você tem alguma perguna ou está interessado em trabalhar com a minha equipe e comigo?
+                </p>
+                <p>
+                    É só preencher os campos do formulário abaixo
+                </p>
+                <form>
+                    <div class="form-grupo">
+                        <label for="assunto">Quero falar sobre...</label>
+                        <select id="assunto">
+                            <option value="consulta">Consulta Geral</option>
+                            <option value="orientacao">Necessito de Orientação</option>
+                            <option value="consultoria">Solicitação de Consultoria</option>
+                            <option value="palestra">Solicitação de Palestra</option>
+                            <option value="entrevista">Solicitação de Entrevista</option>
+                        </select>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">E-mail Profissional</label>
+                        <input type="text" name="email" id="email" placeholder="Digite o seu E-mail">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="URL_site">URL do Site</label>
+                        <input type="text" name="URL_site" id="URL_site" placeholder="Digite a URL do site">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="porte_empresa">Porte da Empresa</label>
+                        <select id="porte_empresa">
+                            <option value="individual">Individual</option>
+                            <option value="2">Até dois funcionários</option>
+                            <option value="3_25">De 3 à 25 funcionários</option>
+                            <option value="26_50">De 26 à 50 funcionários</option>
+                            <option value="51_350">De 51 à 350 funcionários</option>
+                            <option value="351_999">De 351 à 999 funcionários</option>
+                            <option value="1000">Acima de 1000 funcionários</option>
+                        </select>
+                    </div>
+                    <textarea name="comentario" id="comentario" placeholder="Mensagem [educada e sucinta, por favor]"></textarea>
+                    <input type="button" class="btn-enviar" value="Enviar">
+                </form>
+            </div>
+        </main>
+
+
+        <footer>
+            <img src="../img/logotipo.png" alt="Logotipo do blog">
+            <ul>
+                <li>
+                    Siga-me na web
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
